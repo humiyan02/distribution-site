@@ -24,7 +24,7 @@ const useStyles = makeStyles(() =>
 
 const ImageItemList: FC = () => {
   const [data, setData] = useState<TileData[]>([]);
-  const { keyword } = useParams();
+  const { keyword }:{ keyword:string} = useParams();
   const classes = useStyles();
   const history = useHistory();
 

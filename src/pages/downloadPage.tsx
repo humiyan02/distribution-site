@@ -21,7 +21,7 @@ const useStyles = makeStyles(() =>
 )
 
 const DownloadPage: FC = () => {
-    const { keyword } = useParams();
+    const { keyword }:{ keyword:string} = useParams();
     const classes = useStyles();
     const [data, setData] = useState<TileData[]>([]);
     
